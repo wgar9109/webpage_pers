@@ -1,0 +1,120 @@
+/******Base Styles******/
+
+body {
+    display: flex;
+    text-align: center;
+    background-image: url("../img/compscrn.jpg");
+    background-size: contain;
+
+}
+
+article {
+    font-size: 24px;
+    font-weight:800;
+    text-align: center;
+    align-items: center;
+}
+
+nav {
+    display: block;
+    color: yellow;
+    position: relative;
+    font-size: 24px;
+    text-align: right;
+}
+
+#about {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    font-size: 2em;
+
+}
+
+section {
+    position: relative;
+    display: flex;
+    font-size: 2.5em;
+    flex-flow: column wrap;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/****** Header Styles ******/
+
+h1 {
+    font-size: 4em;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    margin: 10px 5px 25px 45px;
+}
+
+/****** Page Content ******/
+
+h2 {
+    position: relative;
+    padding: 15px 8px;
+    display: inline-block;
+    font-size: 3em;
+    color: wheat;
+    flex-flow: row wrap;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    position: relative;
+    color: lightgray;
+    text-align: space-around;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: space-between;
+    font-size: 1.5em;
+}
+
+    .list-container {
+        position: relative;
+        color:azure;
+        box-sizing: auto;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        border-style:inset;
+        font-size: 20px;
+        color:white;
+    }
+
+link {
+    text-shadow: red;
+    text-decoration: underline;
+}
+
+footer {
+    font-weight: 700;
+    color:orange;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+@media screen and (min-width: 786px) {
+    h1 {
+        font-size: 3em;
+
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 4em;
+    }
+}
