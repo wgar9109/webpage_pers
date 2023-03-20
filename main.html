@@ -5,44 +5,78 @@
   <meta charset="UTF-8">
   <title>Tyler Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="C:\Users\tyler\ghpageswebsite\css\style.css">
-  <link rel="stylesheet" href="C:\Users\tyler\ghpageswebsite\css\normalize.css">
+  <link rel="stylesheet" href="C:\Users\tyler\webpage_pers\css\style.css">
+  <link rel="stylesheet" href="C:\Users\tyler\webpage_pers\css\normalize.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Open+Sans&family=Poppins:wght@300&family=Tilt+Warp&display=swap"
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Playfair+Display&family=Poppins:wght@300&family=Tilt+Warp&display=swap"
     rel="stylesheet">
-    <script src="index.js"></script>
+
+  <script src="three.js" defer></script>
+  <script src="index.js" defer></script>
+
+  <i class="fa-solid fa-landmark fa-flip" style="--fa-animation-duration: 3s; display: block; background-color: white;"></i>
 
 </head>
 
-<body>
+<body> <i class="fa-solid fa-landmark fa-flip" style="--fa-animation-duration: 3s; display: block; background-color: white;"></i>
+  <div class="section-1">
+  <script type="module">
+    import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    const geometry = new THREE.BoxGeometry(1, 1, 1);
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+    scene.add(cube);
+
+    camera.position.z = 5;
+
+    function animate() {
+      requestAnimationFrame(animate);
+
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.02;
+
+      renderer.render(scene, camera);
+    }
+
+    animate();
+  </script>
+  </div>
+
   <nav>
+    <i class="fa-solid fa-landmark fa-flip" style="--fa-animation-duration: 3s; display: block; background-color: white;"></i>
     <ul>
- <li><a href="#1">About!</a></li>
- <li><a href="#2">Contact Me!</a>
-  <i class="fa-solid fa-handshake"></i></li>
+      <li><a href="#1">About!</a></li>
+      <li><a href="#2">Contact Me!</a>
     </ul>
-    
+
     <form>
-      <input type="search" name="q" placeholder="Search" />
+      <input type="search" name="button" placeholder="Search" />
       <input type="submit" value="Go!" />
     </form>
-</nav>
+  </nav>
+  <main>
+      <h1>Welcome to: 
+        Tyler's Developer Page Showcase</h1>
+      <p>I have come a very long ways in my developer journey. I can say I've familiarized myself with html & css. </p>
+      <p>By crawling off this say code here. Say at least this many know of what they fly that hotmail<em>The
+          extensive me ants is there!</em>. CSS elements is what this seems to be most challenging, for sure. </p>
+      <p>CSS least know to crawl that <strong>The meant and that coding is elements HTML a what before</strong>. Is HTML
+        coding <em>To this to seems know of coding extensive by extensive they</em> to coding coding to learn this. I
+        this
+        what a seems thisAre learn a elements learn. You what theyOf meant lot learn elements say learn there and this
+        what. </p>
 
-<main>
-
-  <article>
-    <h1>:Welcome To:</h1>
-    <h2>Tyler's Developer Page Showcase</h2>
-    <p>I have come a very long ways in my developer journey. I can say I've familiarized myself with html & css. </p>
-    <p>By crawling off this say code here. Say at least this many know of what they fly that hotmail<em>The
-        extensive me ants is there!</em>. CSS elements is what this seems to be most challenging, for sure. </p>
-    <p>CSS least know to crawl that <strong>The meant and that coding is elements HTML a what before</strong>. Is HTML
-      coding <em>To this to seems know of coding extensive by extensive they</em> to coding coding to learn this. I this
-      what a seems thisAre learn a elements learn. You what theyOf meant lot learn elements say learn there and this
-      what. </p>
-      </article>
     <div class="list-container">
       <ul>
         <li>I have familiarized myself with most of html! </li>
@@ -53,12 +87,15 @@
         <li>An expensive list is what to be. </li>
       </ul>
     </div>
+    </main>
+
     <footer>
-    <p>Of learn extensive the elements they
-      <link><a href="https://www.loremipzum.com" target="_blank"></a></link>
-      <p>Say seems I they least to there meant fly they they Lot seems HTML say know learn <strong>Copyright 2023...</strong> by LearningLamery/
-    </p>
-</footer>
+      <p>Of the learned said elements, we've only just begun!!</p>
+        <link><a href="https://www.loremipzum.com" target="_blank"></a></link>
+      <p>Say it seems they at least two or three times it dreams were meant fly they they Lot seems HTML say know learn <strong>Copyright
+          2023...</strong> by LearningLately.
+      </p>
+    </footer>
 </body>
 
 </html>

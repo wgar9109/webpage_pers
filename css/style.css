@@ -1,45 +1,58 @@
 /******Base Styles******/
 
 body {
-    display: flex;
+    background-color: black;
     text-align: center;
-    background-image: url("../img/compscrn.jpg");
-    background-size: contain;
-
+    color: white;
 }
 
-article {
-    font-size: 24px;
-    font-weight:800;
-    text-align: center;
-    align-items: center;
+.section-1 {
+    position: absolute;
+    background-size: cover;
+    padding: 3px 8px;
+    margin: 2px 5px 8px 2px;
+
 }
 
 nav {
-    display: block;
-    color: yellow;
+    display: inline-block;
+    color: white;
     position: relative;
     font-size: 24px;
-    text-align: right;
-}
-
-#about {
-    position: relative;
-    display: flex;
-    flex-flow: wrap;
-    align-items: center;
-    font-size: 2em;
+    font-weight: 700;
+    background-color: black;
 
 }
 
-section {
+ul li 
+:hover {
+    scrollbar-highlight-color: goldenrod;
+    position: relative;
+    text-align: justify;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+form {
     position: relative;
     display: flex;
-    font-size: 2.5em;
     flex-flow: column wrap;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    color: dodgerblue;
+    font-family:'Lucida Sans', 'Lucida';
+    text-align: justify;
+    font-weight: 600;
 }
+
+main {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    justify-content: space-between;
+}
+
+
 
 /****** Header Styles ******/
 
@@ -48,40 +61,30 @@ h1 {
     color: whitesmoke;
     position: relative;
     text-align: center;
-    text-transform: uppercase;
     display: flex;
-    flex-flow: column wrap;
-    font-family: 'Poppins', sans-serif;
-    justify-content: center;
+    flex-direction: inherit;
+    justify-content: space-around;
     margin: 10px 5px 25px 45px;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 /****** Page Content ******/
 
-h2 {
-    position: relative;
-    padding: 15px 8px;
-    display: inline-block;
-    font-size: 3em;
-    color: wheat;
-    flex-flow: row wrap;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-}
-
 p {
     position: relative;
-    color: lightgray;
-    text-align: space-around;
+    padding: 15px 8px;
     display: flex;
-    flex-flow: column-reverse;
-    justify-content: space-between;
     font-size: 1.5em;
+    color: wheat;
+    flex-flow: column-reverse;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    justify-content: space-evenly;
 }
 
-    .list-container {
+.list-container {
         position: relative;
-        color:azure;
+        color: white;
         box-sizing: auto;
         text-align: center;
         text-transform: uppercase;
@@ -92,6 +95,16 @@ p {
         color:white;
     }
 
+ul li {
+    display: inline-flex;
+    position: relative;
+    font-family: 'Playfair Display', serif;
+    touch-action: pinch-zoom;
+    list-style-type: upper-roman;
+    text-align: justify;
+    flex-flow: row wrap;
+}
+
 link {
     text-shadow: red;
     text-decoration: underline;
@@ -99,10 +112,10 @@ link {
 
 footer {
     font-weight: 700;
-    color:orange;
+    color: ghostwhite;
     font-family: 'IBM Plex Sans', sans-serif;
-    font-style: normal;
     text-align: center;
+    background-color: black;
 }
 
 @media screen and (min-width: 786px) {
