@@ -1,36 +1,95 @@
 /******Base Styles******/
 
 body {
+
+    font-size: 16px;
     position: relative;
-    text-align: inherit;
+    text-align: center;
+    font-family: 'Delicious Handrawn', cursive;
     background-color: black;
 }
 
+img {
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    width: 1200px;
+    opacity: 0.7;
+
+}
+
 .section-1 {
+    display: inline-flex;
+    flex-flow: column wrap;
+    font-family: 'Playfair Display', serif;
+    font-size: 2em;
     position: relative;
     padding: 3px 8px;
     margin: 2px 5px 8px 2px;
-
-
 }
 
 form {
     position: relative;
+    font-size: 2.0em;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: row;
     color: white;
-    font-family:'Lucida Sans', 'Lucida';
     text-align: center;
     font-weight: 600;
 }
 
-nav {
-    display: space-between;
-    color: white;
+nav ul li {
+    align-items: flex-start;
+    display: flex wrap;
     position: relative;
-    font-size: 24px;
-    font-weight: 700;
+    font-family: 'Alkatra', cursive;
+    color: khaki;
+    text-align: center;
+    font-size: 3.5em;
+    color: burlywood;
+}
 
+main {
+    position: relative;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 3em;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+h1 {
+    font-size: 32px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+}
+
+.list-container {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 28px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    position: relative;
+    font-size: 2.5em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: ghostwhite;
+
+}
+
+aside {
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: initial;
+    position: relative;
 }
 
 ul li {
@@ -41,79 +100,139 @@ ul li {
     font-weight: 600;
 }
 
-main {
+footer {
+    display: flex-end;
     position: relative;
-    display: flex;
-    flex-flow: row wrap;
-    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+    font-family: 'Delicious Handrawn', cursive;
     text-align: center;
-    justify-content: space-around;
-}
-
-
-
-/****** Header Styles ******/
-
-h1 {
-    font-size: 42px;
-    color: white;
-    position: relative;
-    text-align: center;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    margin: 10px 5px 25px 45px;
-    font-family: 'IBM Plex Sans', sans-serif;
-    background-image: url("img\landmark-solid.svg");
-}
-
-/****** Page Content ******/
-
-p {
-    position: relative;
-    padding: 15px 8px;
-    display: flex;
-    flex-flow: row wrap;
-    font-size: 1.5em;
-    color: white;
-    flex-flow: column-reverse;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
+    flex-flow: justify;
+    color: black;
+    font-weight: 500;
     justify-content: space-between;
 }
 
 /****** About! ******/
 
+body {
+    display: flex;
+    flex-grow: inherit;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 18px;
+}
+
+picture {
+    background-size: 1200px;
+    position: absolute;
+
+}
+
+form {
+    display: flex;
+    flex-wrap: row;
+    width: 25%;
+    font-family: 'Alkatra', cursive;
+    font-size: 2.5em;
+}
+
 .list-container {
-        position: sticky;
+        position: relative;
+        display: inline-block;
         color: white;
         box-sizing: auto;
-        text-align: center;
+        text-align: inherit;
         text-transform: uppercase;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Tilt Warp', cursive;
         text-align: center;
         border-style: double;
+        border-color: floralwhite;
         font-size: 20px;
-        color:white;
     }
 
 ul li {
-    display: flex;
-    position: relative;
+    display: list-item;
+    grid-template-columns: repeat(auto-fill, minmax(150px));
     font-family: 'Playfair Display', serif;
-    list-style-type: upper-roman;
-    text-align: justify;
-    flex-flow: row wrap;
+    list-style-type: lower-greek;
+    text-align: space-between;
+}
+
+aside {
+    position: relative;
+    display: block;
+    block-size: auto;
+    text-align: right;
+    color: white;
+    font-family: 'Alkatra', cursive;
+    font-size: 1.5em;
+}
+
+picture {
+    position: absolute;
+    background-color: black;
+    background-image: url('/img/rootweld.jpg');
+    background-repeat: repeat-x;
+    background-size: cover;
+    opacity: 4.5fr;
 }
 
 /****** Contact! ******/
 
+body {
+    position: relative;
+    font-family: 'Tilt Warp', cursive;
+    text-align: justify;
+    font-size: 16px;
+}
+
+picture {
+    background-image: url('../img/bama.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.section-1 {
+    font-size: 4em;
+    text-align: initial;
+    font-family: 'Alkatra', cursive;
+    color: white;
+    text-decoration: underline;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 38px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+
+}
+
 footer {
+    position: relative;
+    display: inline-flex;
+    flex-flow: column;
     font-weight: 700;
     color: ghostwhite;
-    font-family: 'IBM Plex Sans', sans-serif;
+    align-items: center;
+    text-align: inherit;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+footer p {
+    display: flex;
+    flex-flow: inherit;
+    flex-direction: row-reverse;
     text-align: center;
-    background-color: black;
+    font-size: 2.5em;
+    font-family: 'Tilt Warp', cursive;
+    position: relative;
+
 }
 
 /****** Mobile & Tablet ******/

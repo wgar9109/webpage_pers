@@ -1,7 +1,6 @@
-const spinCube = document.querySelector(".section-1");
+const title = document.querySelector("footer");
 
-spinCube.style.position = "absolute";
-spinCube.style.display = "initial";
-spinCube.style.backgroundColor = "black";
+title.addEventListener("mouseover", function () {
+    title.innerText = ""
+})
 
-console.log(spinCube);

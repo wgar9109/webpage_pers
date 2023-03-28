@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Tyler Homepage</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
@@ -11,81 +11,71 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=Playfair+Display&family=Poppins:wght@300&family=Tilt+Warp&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Alkatra&family=Delicious+Handrawn&family=IBM+Plex+Sans:wght@500;700&family=Playfair+Display&family=Tilt+Warp&display=swap"
     rel="stylesheet">
 
-  <script src="./three.js" defer></script>
   <script src="./index.js" defer></script>
+
+  <script src="https://kit.fontawesome.com/c12ba8af9b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <div class="section-1">
-    <nav>
-      <form>
-        <input type="search" name="button" placeholder="Search" />
-        <input type="submit" value="Go!" />
-      </form>
-      <ul>
-        <li><a href="./about!.html">About!</a></li>
-        <li><a href="./contact!.html">Contact Me!</a>
-      </ul>
+  <picture>
+    <img src="img/OCOEE1.jpg" alt="Whitewater rafting">
+  </picture>
+
+  <div class="section1">
+    <form className="button">
+      <input type="search" name="button" placeholder="Search" />
+      <input type="submit" value="Go!" />
+    </form>
   </div>
+  <nav>
+    <ul>
+      <li><a href="about!.html">About!</a></li>
+      <li><a href="contact!.html">Contact Me!</a>
+      <li><a href="main.html">Back to Home</a></li>
+    </ul>
   </nav>
+
   <main>
-    <script type="module" style="position:absolute; background-position-x:center">
-      import * as THREE from 'https://unpkg.com/three/build/three.module.js';
-
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera(100, window.innerWidth / window.innerHeight, 0.1, 1000);
-
-      const renderer = new THREE.WebGLRenderer();
-      renderer.setSize(window.innerWidth, window.innerHeight);
-      document.body.appendChild(renderer.domElement);
-
-      const geometry = new THREE.BoxGeometry(1, 1, 1);
-      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-      const cube = new THREE.Mesh(geometry, material);
-      scene.add(cube);
-
-      camera.position.z = 5;
-
-      function animate() {
-        requestAnimationFrame(animate);
-
-        cube.rotation.x += 0.01;
-        cube.rotation.y += 0.02;
-
-        renderer.render(scene, camera);
-      }
-
-      animate();
-    </script>
-    <h1>Welcome to:<break></break>
-      Tyler's Development Showcase</h1>
+    <h1>Welcome to</h1>
+    <h2>Tyler's Development Showcase</h2>
     <p>Yeah, he's right here. They're late. My experiment worked. They're all exactly twenty-five minutes slow. Of
       course, the Enchantment Under The Sea Dance they're supposed to go tonight.</p>
 
     <div class="list-container">
       <ul>
         <li>Ahh. It's taken me almost thirty years and my entire family fortune to realize the vision of that day, my
-          god has
-          it been that long. Things have certainly changed around here. I remember when this was all farmland as far as
-          the eye could see. Old man Peabody, owned all of this. He had this crazy idea about breeding pine trees.
-        </li>
-        <li>What's with the life preserver? Watch it, Goldie.
-        </li>
-        <li>Listen, woh. Hello, uh excuse me. Sorry about your barn.
-        </li>
+          god has it been that long. Things have certainly changed around here.</li>
+        <li>What's with the life preserver? Watch it, Goldie.</li>
+        <li>Listen, woh. Hello, uh excuse me. Sorry about your barn.</li>
       </ul>
     </div>
   </main>
 
-  <footer>
+  <aside>
     <p>Busey ipsum dolor sit amet. I would like to give you a backstage pass to my imagination.Go with the feeling of
       the nature. Take it easy. Know why you're here. And remember to balance your internal energy with the
       environment.Sometimes horses cough and fart at the same time, so stay out of the range of its butt muscle because
       a horses butt muscle is thick.
     </p>
+  </aside>
+
+  <footer>
+    <thead>
+      <tr>
+         <th rowspan="3">Contact!</th> 
+      </tr>
+      </thead>
+      <tbody>
+        
+      </tbody>
+      tylergary@rocketmail.com</li>
+      <li>mobile `~` (205) 430-0187</li>
+      <li><a href="https://www.linkedin.com/in/williamgary/">My LinkedIn Profile</a></li>
+    </tr>
+    </table>
   </footer>
 </body>
 
